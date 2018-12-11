@@ -1,31 +1,157 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<html lang="en-US">
+<head>
+
+    <title>LentesRD</title>
+
+    <meta name="theme-color" content="#080738">
+    <link rel="shortcut icon" href="https://assets.ctfassets.net/zw48pl1isxmc/3vlRMPrFUISEWiuOaiCOq8/fa5652a6abc88ce8835431b8e48317f2/favicon.ico">
+    @*<style media="screen">
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+
+
+    </style>*@
+
+
+    <style>
+        label {
+            font-weight: bold !important;
+        }
+    </style>
+    <!-- WWW CSS -->
+
+    <link href="~/Content/original-62812e042994cb7c74bc74fac4250c3db9b2577d.css" rel="stylesheet" />
+
+    </head>
+    <body class="en-us">
+
+        <header class="main-nav-hide">
+            <nav class="container navbar navbar-expand-md">
+                <a href="https://www.optimizely.com/" class="logo-optimizely mr-auto text-hide">Lentes RD</a>
+
+            </nav>
+        </header>
+        <main class="resources detail">
+
+            <section class="hero hero-standard   d-flex justify-content-center align-items-center" data-optimizely="hero" style="background-image: url(&#39;http://getwallpapers.com/wallpaper/full/9/8/5/653268.jpg&#39; )">
+                <!--  -->
+                <div class="hero-content container">
+                    <h1 class="">
+                        <strong>Cómo transformar tu vida</strong>
+                    </h1>
+                    <h2 class="">
+                        <strong>Un viaje gozoso </strong>
+                    </h2>
+                </div>
+            </section>
+            <section class="split-section container d-flex flex-column flex-md-row">
+                <div class="content-side col-md-5 col-lg-6" data-optimizely="resourceContent">
+                    <img class="promo-image img-thumbnail" src="https://meditaenmadrid.org/wp-content/uploads/2018/06/FOR-SOCIAL-MEDIA-1.jpg">
+                    <p><strong>Written for optimizers, by optimizers.</strong></p>
+                    <p>Inspiration and best practices for A/B testing and optimization can be hard to come by — that’s why we created Optimization Survival Guide.</p>
+                    <p>Over 30 veteran experimenters from Optimizely’s Optiverse community share their honest advice on how you can overcome roadblocks and take your testing program to the next level. </p>
+                    <p>With the tips from this guide, you’ll be able to:</p>
+                    <ul>
+                        <li>Set your optimization strategy up for success by knowing what to expect</li>
+                        <li>Create smart experiment hypotheses and build effective testing processes</li>
+                        <li>Use your newfound inspiration to hit the ground running on your next experiment</li>
+                    </ul>
+                </div>
+                <div class="pillar-side container col-lg-7 col-xl-5 pl-lg-0">
+                    <div class="form-wrap">
+                        <h2><strong>Obtenga el libro Cómo transformar tu vida</strong></h2>
+                        <img class="promo-image img-thumbnail" src="https://meditaenmadrid.org/wp-content/uploads/2018/07/5-700x700.jpg" alt="The Optimization Survival Guide">
+                        <p class="prog-prof-sub-prompt">Comparta solo unos detalles sobre usted y le enviaremos el libro a su correo electronico</p>
+                        <form id="landing-page-form" class="lead demandbase-form demandbase-active progressive multiform" data-next="thank-you" novalidate="" autocomplete="false">
+                            <div class="form__wrapper form__wrapper--stacked">
+                                <div class="prog-prof" id="ppPhase1">
+                                    <div class="email-field form-section current">
+                                        <label for="email">Correo Electronico</label>
+                                        <input type="email" id="email" name="email" data-mktoname="Email" class="require" required="required" data-parsley-type-message="Please enter a valid email" placeholder="nombre@mail.com" autocomplete="false" required="" data-parsley-group="block-0">
+                                    </div>
+
+                                    <div>
+                                        <label for="first_name">Nombre</label>
+                                        <input type="text" id="first_name" name="first_name" data-mktoname="FirstName" class="require" autocomplete="false" pattern="([A-z0-9À-ž\s\-`&#39;´_,.]){2,}" data-parsley-group="block-1">
+                                        <img src="https://www.optimizely.com/resources/website-optimization-tips/" alt="avatar" class="avatar" style="display:none">
+                                    </div>
+                                    <div>
+                                        <label for="last_name">Apellido</label>
+                                        <input type="text" id="last_name" name="last_name" data-mktoname="LastName" class="require" autocomplete="false" pattern="([A-z0-9À-ž\s\-`&#39;´_,.]){2,}" data-parsley-group="block-1">
+                                    </div>
+
+                                    <div>
+                                        <label for="company">Compañia</label>
+                                        <input type="text" id="company" name="company" data-mktoname="Company" class="require" role="textbox" aria-autocomplete="list" aria-haspopup="true" autocomplete="off" data-parsley-group="block-1">
+                                        <img src="https://www.optimizely.com/resources/website-optimization-tips/" alt="logo" class="company-logo" style="display:none">
+                                    </div>
+
+
+
+                                </div>
+                                <div class="prog-prof" id="ppPhase2">
+                                    <div>
+                                        <label>Which best describes your job function?</label>
+                                        <select class="opty-select require" data-prog-prof="job_function" data-mktoname="Job_Function__c" name="job_function">
+                                            <option selected="" disabled="" value=""> -- Select the closest option -- </option>
+                                            <option value="Accounting/Procurement">Accounting/Procurement</option>
+                                            <option value="Analytics/Data Science">Analytics/Data Science</option>
+                                            <option value="Business Operations">Business Operations</option>
+                                            <option value="eCommerce">eCommerce</option>
+                                            <option value="Finance">Finance</option>
+                                            <option value="IT">IT</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="Mobile Development">Mobile Development</option>
+                                            <option value="Product Management">Product Management</option>
+                                            <option value="Sales/Success/BD">Sales/Success/BD</option>
+                                            <option value="Software Engineering">Software Engineering</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="prog-prof" id="ppPhase3">
+                                    <div>
+                                        <label>Which best describes your job level?</label>
+                                        <select class="opty-select require" data-prog-prof="job_level" data-mktoname="Job_Level__c" name="job_level">
+                                            <option selected="" disabled="" value=""> -- Select the closest option -- </option>
+                                            <option value="C-Level/President">C-Level/President</option>
+                                            <option value="Vice President">Vice President</option>
+                                            <option value="Director">Director</option>
+                                            <option value="Manager">Manager</option>
+                                            <option value="Specialist/Associate">Specialist/Associate</option>
+                                            <option value="Coordinator">Coordinator</option>
+                                            <option value="Consultant">Consultant</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <button type="submit" id="submit" class="next btn btn-success btn-xl btn-block" style="">Descargar</button>
+
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+    </body>
+</html>
