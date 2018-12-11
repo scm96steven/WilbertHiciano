@@ -151,6 +151,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\Lentes RD.png" />
     <Content Include="Content\original-62812e042994cb7c74bc74fac4250c3db9b2577d.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
