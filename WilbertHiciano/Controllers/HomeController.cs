@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WilbertHiciano.Models;
 
 namespace WilbertHiciano.Controllers
 {
@@ -13,7 +14,15 @@ namespace WilbertHiciano.Controllers
             return View();
         }
 
-        public ActionResult LandingPage()
+        [HttpPost]
+        public ActionResult Index(Model usr)
+        {
+
+
+            return RedirectToAction("GreetingsPage", usr);
+        }
+
+        public ActionResult GreetingsPage(Model usr)
             {
                 return View();
             }
