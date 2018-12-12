@@ -51,10 +51,6 @@
 
                 $(".formHide").hide(500);
 
-                $('a[href$=".pdf"]')
-                    .attr('download', '')
-                    .attr('target', '_blank').click(); 
-
 
             });
 
@@ -99,7 +95,7 @@
             </div>
         </section>
         <section class="split-section container d-flex flex-column flex-md-row">
-            <div class="content-side col-md-5 col-lg-6" data-optimizely="resourceContent">
+            @*<div class="content-side col-md-5 col-lg-6" data-optimizely="resourceContent">
 
                 <p><strong>Si su descarga no comenzo automaticamente:</strong></p>
             
@@ -115,8 +111,31 @@
                     <li>El arte de tomar y dejar</li>
                 </ul>
                 <p>  Y un sin número de consejos más para que puedas vivir una vida mejor, no esperes mas.</p>
+            </div>*@
+            <div class="content-side container col-md-5 col-lg-6 ">
+                <div class="form-wrap">
+                    <h2 class="center-aligned"><strong>Si su descarga no comenzo automaticamente:</strong></h2>
+             
+
+                    <p>
+                        <a type="button" id="download" href="~/Content/como-transformar-tu-vida.pdf" class="next btn btn-primary btn-xs sendButton download" download>¡Click aqui!</a>
+                    </p>
+              
+
+                        <div class="form__wrapper form__wrapper--stacked">
+
+
+
+                         
+                        </div>
+
+
+
+
+                    
+                </div>
             </div>
-    
+
             <div class="content-side container col-md-5 col-lg-6 formHide">
                 <div class="form-wrap">
                     <h2 class="center-aligned"><strong>¡Esperamos que disfrutes mucho este ebook!</strong></h2>
