@@ -37,7 +37,44 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+    
+    
+    <script type="text/javascript">
 
+
+
+        $(document).ready(function ($) {
+            console.log("ready!");
+            $("#download, .download").trigger("click");
+            $("#submit, .sendButton").click(function () {
+                alert("¡Muchas gracias por tu tiempo!");
+
+                $(".formHide").hide(500);
+
+                $('a[href$=".pdf"]')
+                    .attr('download', '')
+                    .attr('target', '_blank').click(); 
+
+
+            });
+
+            var link = document.createElement('a');
+            link.href = '/Content/como-transformar-tu-vida.pdf';
+            link.download = 'Como transformar tu vida.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+      
+
+        });
+
+        $(window).load(function () {
+            $("#download, .download").trigger("click");
+        })
+
+
+
+    </script>
 </head>
 <body class="en-us">
 
@@ -64,8 +101,11 @@
         <section class="split-section container d-flex flex-column flex-md-row">
             <div class="content-side col-md-5 col-lg-6" data-optimizely="resourceContent">
 
-                <p><strong>En este grandioso ebook encontrarás cómo:</strong></p>
-                <p></p>
+                <p><strong>Si su descarga no comenzo automaticamente:</strong></p>
+            
+                <p>
+                    <a type="button" id="download" href="~/Content/como-transformar-tu-vida.pdf" class="next btn btn-primary btn-xs sendButton download" download>¡Click aqui!</a>
+                </p>
                 <ul>
 
                     <li>Aumentar el amor a los demás</li>
@@ -76,9 +116,92 @@
                 </ul>
                 <p>  Y un sin número de consejos más para que puedas vivir una vida mejor, no esperes mas.</p>
             </div>
-            <div class="pillar-side container col-lg-7 col-xl-5 pl-lg-0">
-             
+    
+            <div class="content-side container col-md-5 col-lg-6 formHide">
+                <div class="form-wrap">
+                    <h2 class="center-aligned"><strong>¡Esperamos que disfrutes mucho este ebook!</strong></h2>
+
+                    <p class="prog-prof-sub-prompt">Si deseas mas libros como este, solo debes llenar estas ultimas preguntas para conocerte mejor @Model.name @Model.lastName.</p>
+                    @using (Html.BeginForm("", "Home",
+                 FormMethod.Post, new { @class = "lead demandbase-form demandbase-active progressive multiform", @id = "landing-page-form" }))
+                    {
+
+
+                        <div class="form__wrapper form__wrapper--stacked">
+
+                           
+
+                          
+                            <div class="" id="ppPhase1">
+                                <div>
+                                    <label>¿Actualmente esta laborando?</label>
+                                    <select class="opty-select require" data-prog-prof="job_function" data-mktoname="Job_Function__c" name="job_function">
+                                        <option selected="" disabled="" value=""> -- Selecciona la opcion -- </option>
+                                        <option value="Web Development">No</option>
+                                        <option value="Other">Si</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="company">Compañia</label>
+                                <input type="text" id="company" name="company" class="require" role="textbox" aria-autocomplete="list" aria-haspopup="true" autocomplete="off" data-parsley-group="block-1">
+
+                            </div>
+                            <div class="" id="ppPhase2">
+                                <div>
+                                    <label>Cual de estas areas describe mejor tu area de trabajo?</label>
+                                    <select class="opty-select require" data-prog-prof="job_function" data-mktoname="Job_Function__c" name="job_function">
+                                        <option selected="" disabled="" value=""> -- Selecciona la opcion mas parecida -- </option>
+                                        <option value="Accounting/Procurement">Contabilidad</option>
+                                        <option value="Analytics/Data Science">Analisis y Ciencia de datos</option>
+                                        <option value="Business Operations">Operaciones de negocios</option>
+                                        <option value="eCommerce">eCommerce</option>
+                                        <option value="Finance">Finanzas</option>
+                                        <option value="IT">Tecnologias de Informacion</option>
+                                        <option value="Marketing">Mercadeo</option>
+                                        <option value="Mobile Development">Desarrollo movil</option>
+                                        <option value="Product Management">Gestion de proyectos</option>
+                                        <option value="Sales/Success/BD">Ventas</option>
+                             
+                                        <option value="Web Development">Desarrollador de software</option>
+                                        <option value="Other">Otra</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="" id="ppPhase3">
+                                <div>
+                                    <label>¿Cual describe mejor tu posicion laboral?</label>
+                                    <select class="opty-select require" data-prog-prof="job_level" data-mktoname="Job_Level__c" name="job_level">
+                                        <option selected="" disabled="" value=""> -- Selecciona la opcion mas parecida  -- </option>
+                                        <option value="C-Level/President">Presidente</option>
+                                        <option value="Vice President">Vice Presidente</option>
+                                        <option value="Director">Director</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Specialist/Associate">Especialista/Asociado</option>
+                                        <option value="Coordinator">Coordinador</option>
+                                        <option value="Consultant">Consultor</option>
+                                        <option value="Other">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div>
+                                <button type="button" id="submit" class="next btn btn-success btn-xl btn-block sendButton" style="">Enviar</button>
+
+                            </div>
+                        </div>
+
+
+
+
+                    }
+                </div>
             </div>
+
         </section>
 
     </main>
