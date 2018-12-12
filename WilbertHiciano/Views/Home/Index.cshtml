@@ -13,17 +13,9 @@
     <title>LentesRD</title>
 
     <meta name="theme-color" content="#080738">
-    @*<link  href="https://assets.ctfassets.net/zw48pl1isxmc/3vlRMPrFUISEWiuOaiCOq8/fa5652a6abc88ce8835431b8e48317f2/favicon.ico*@
+
     <link rel="shortcut icon" href="~/Content/favicon.ico" />
-    @*<style media="screen">
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
 
-
-
-    </style>*@
 
 
     <style>
@@ -67,9 +59,7 @@
                 <div class="content-side col-md-5 col-lg-6" >
                     <img class="promo-image img-thumbnail" src="https://meditaenmadrid.org/wp-content/uploads/2018/07/5-700x700.jpg" alt="The Optimization Survival Guide">
                     <p><strong>En este grandioso ebook encontrarás cómo:</strong></p>
-                    <p></p>
                     <ul>
-
                         <li>Aumentar el amor a los demás</li>
                         <li>La gran compasión</li>
                         <li>El amor que desea la felicidad de los demás.</li>
@@ -89,69 +79,31 @@
                     
            
                             <div class="form__wrapper form__wrapper--stacked">
-                                <div class="prog-prof" id="ppPhase1">
+                              
                                     <div class="email-field form-section current">
                                         <label for="email">Correo Electronico</label>
-                                        <input type="email" id="email" name="email"  class="require" required data-parsley-type-message="Please enter a valid email" placeholder="nombre@mail.com" autocomplete="false" required data-parsley-group="block-0">
+                                        <input type="email" id="email" name="email"  class="require" required placeholder="nombre@mail.com" autocomplete="false" required data-parsley-group="block-0">
                                     </div>
 
                                     <div>
                                         <label for="fi">Nombre</label>
-                                        <input type="text" id="first_name" name="name" data-mktoname="FirstName" class="require" required autocomplete="false" pattern="([A-z0-9À-ž\s\-`&#39;´_,.]){2,}" data-parsley-group="block-1">
-                                        <img src="https://www.optimizely.com/resources/website-optimization-tips/" alt="avatar" class="avatar" style="display:none">
+                                        <input type="text" id="first_name" name="name"  class="require" required autocomplete="false" pattern="([A-z0-9À-ž\s\-`&#39;´_,.]){2,}" data-parsley-group="block-1">
+                                
                                     </div>
                                     <div>
                                         <label for="last_name">Apellido</label>
-                                        <input type="text" id="lastName" name="lastName" data-mktoname="LastName" class="require"  required autocomplete="false" pattern="([A-z0-9À-ž\s\-`&#39;´_,.]){2,}" data-parsley-group="block-1">
+                                        <input type="text" id="lastName" name="lastName"  class="require"  required autocomplete="false" pattern="([A-z0-9À-ž\s\-`&#39;´_,.]){2,}" data-parsley-group="block-1">
                                     </div>
 
                                     <div>
                                         <label for="company">Compañia</label>
-                                        <input type="text" id="company" name="company" data-mktoname="Company" class="require" role="textbox" aria-autocomplete="list" aria-haspopup="true" autocomplete="off" data-parsley-group="block-1">
-                                        <img src="https://www.optimizely.com/resources/website-optimization-tips/" alt="logo" class="company-logo" style="display:none">
+                                        <input type="text" id="company" name="company" class="require" role="textbox" aria-autocomplete="list" aria-haspopup="true" autocomplete="off" data-parsley-group="block-1">
+                                  
                                     </div>
 
 
 
-                                </div>
-                                <div class="prog-prof" id="ppPhase2">
-                                    <div>
-                                        <label>Which best describes your job function?</label>
-                                        <select class="opty-select require" data-prog-prof="job_function" data-mktoname="Job_Function__c" name="job_function">
-                                            <option selected="" disabled="" value=""> -- Select the closest option -- </option>
-                                            <option value="Accounting/Procurement">Accounting/Procurement</option>
-                                            <option value="Analytics/Data Science">Analytics/Data Science</option>
-                                            <option value="Business Operations">Business Operations</option>
-                                            <option value="eCommerce">eCommerce</option>
-                                            <option value="Finance">Finance</option>
-                                            <option value="IT">IT</option>
-                                            <option value="Marketing">Marketing</option>
-                                            <option value="Mobile Development">Mobile Development</option>
-                                            <option value="Product Management">Product Management</option>
-                                            <option value="Sales/Success/BD">Sales/Success/BD</option>
-                                            <option value="Software Engineering">Software Engineering</option>
-                                            <option value="Web Development">Web Development</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="prog-prof" id="ppPhase3">
-                                    <div>
-                                        <label>Which best describes your job level?</label>
-                                        <select class="opty-select require" data-prog-prof="job_level" data-mktoname="Job_Level__c" name="job_level">
-                                            <option selected="" disabled="" value=""> -- Select the closest option -- </option>
-                                            <option value="C-Level/President">C-Level/President</option>
-                                            <option value="Vice President">Vice President</option>
-                                            <option value="Director">Director</option>
-                                            <option value="Manager">Manager</option>
-                                            <option value="Specialist/Associate">Specialist/Associate</option>
-                                            <option value="Coordinator">Coordinator</option>
-                                            <option value="Consultant">Consultant</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-
+                    
 
                                 <div>
                                     <button type="submit" id="submit" class="next btn btn-success btn-xl btn-block" style="">Descargar</button>

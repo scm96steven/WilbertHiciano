@@ -24,7 +24,7 @@ namespace WilbertHiciano.Controllers
 
         public ActionResult GreetingsPage(Model usr)
             {
-                return View();
+                return View(usr);
             }
 
             public ActionResult About()

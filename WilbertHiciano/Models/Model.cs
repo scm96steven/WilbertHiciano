@@ -7,10 +7,10 @@ namespace WilbertHiciano.Models
 {
     public class Model
     {
-        string name { get; set; }
-        string lastName { get; set; }
-        string email { get; set; }
-        string company { get; set; }
+        public string name { get; set; }
+        public string lastName { get; set; }
+        public string email { get; set; }
+        public string company { get; set; }
 
     }
 }
